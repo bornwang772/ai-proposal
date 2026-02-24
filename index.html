@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>重塑效率边界：180 AI创意生产中心规划</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <nav class="navbar" id="navbar">
+        <div class="logo">180 <span>AI STUDIO</span></div>
+        <div class="nav-links">
+            <a href="#roi">产能革命</a>
+            <a href="#creative">创意产出</a>
+            <a href="#pipeline">视频管线</a>
+            <a href="#vibe">全域提效</a>
+            <a href="#compliance">合规沉淀</a>
+            <a href="#architecture">中枢架构</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- ═══════════════ HERO ═══════════════ -->
+        <section class="hero" id="hero">
+            <div class="hero-content">
+                <p class="hero-eyebrow reveal-text">180 ADVERTISING × ARTIFICIAL INTELLIGENCE</p>
+                <h1 class="hero-title">
+                    <span class="reveal-text">重塑效率边界</span><br>
+                    <span class="reveal-text gradient-text">AI创意生产中心</span>
+                </h1>
+                <p class="hero-subtitle reveal-text">
+                    以 <strong>1/60</strong> 的成本，装配等效百人团队的全天候创意兵工厂。
+                </p>
+                <div class="hero-stats reveal-text">
+                    <div class="stat">
+                        <span class="stat-number" id="stat-cost">60</span><span class="stat-suffix">×</span>
+                        <span class="stat-label">成本压缩</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number" id="stat-speed">48</span><span class="stat-suffix">h</span>
+                        <span class="stat-label">极速交付</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number" id="stat-output">40</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">单批次出图</span>
+                    </div>
+                </div>
+                <div class="scroll-indicator reveal-text">
+                    <span>向下滑动探索</span>
+                    <i class="ph ph-arrow-down"></i>
+                </div>
+            </div>
+            <div class="hero-glow"></div>
+            <div class="hero-grid-bg"></div>
+        </section>
+
+        <!-- ═══════════════ ROI DASHBOARD ═══════════════ -->
+        <section class="section roi-section" id="roi">
+            <div class="container">
+                <div class="section-label">01 — 产能革命</div>
+                <div class="section-header">
+                    <h2 class="section-title">重塑效率边界</h2>
+                    <p class="section-desc">
+                        应对双11/618等大促节点，面对数百张矩阵式Social海报与多尺寸延展的爆发性需求——<br>传统模式需要外包或内部"爆肝"数周。AI中枢，48小时极速交付。</p>
+                </div>
+
+                <div class="roi-grid">
+                    <div class="roi-card traditional">
+                        <div class="card-label">传统模式</div>
+                        <h3>资深美术 + 设计师 + 外包</h3>
+                        <p class="roi-detail">单月人力与外包成本</p>
+                        <div class="roi-cost">
+                            <span class="currency">¥</span>
+                            <span class="amount" id="trad-cost-counter">0</span>
+                        </div>
+                        <span class="period">每月支出</span>
+                        <div class="cost-bar-container">
+                            <div class="cost-bar traditional-bar"></div>
+                        </div>
+                    </div>
+
+                    <div class="roi-vs">
+                        <div class="vs-circle">VS</div>
+                    </div>
+
+                    <div class="roi-card ai-powered">
+                        <div class="ai-badge">AI 中枢驱动</div>
+                        <h3>战役级顶级算力集群</h3>
+                        <div class="tool-breakdown">
+                            <div class="tool-item">
+                                <div class="tool-name"><i class="ph ph-paint-brush"></i> Lovart Pro</div>
+                                <div class="tool-price">$72/月 ≈ ¥520</div>
+                            </div>
+                            <div class="tool-item">
+                                <div class="tool-name"><i class="ph ph-video-camera"></i> Tapnow Pro</div>
+                                <div class="tool-price">$56/月 ≈ ¥400</div>
+                            </div>
+                            <div class="tool-item">
+                                <div class="tool-name"><i class="ph ph-film-strip"></i> Seedance 2.0</div>
+                                <div class="tool-price">$19.9/月 ≈ ¥145</div>
+                            </div>
+                        </div>
+                        <div class="roi-cost highlight">
+                            <span class="currency">¥</span>
+                            <span class="amount" id="ai-cost-counter">0</span>
+                        </div>
+                        <span class="period highlight-period">每月全部算力订阅</span>
+                        <div class="cost-bar-container">
+                            <div class="cost-bar ai-bar"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="roi-bottom-line">
+                    <p>以 <strong class="gradient-text">1/60</strong> 的成本，装配全天候百人级创意产能。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════ CREATIVE OUTPUT (LOVART) ═══════════════ -->
+        <section class="section creative-section" id="creative">
+            <div class="container">
+                <div class="section-label">02 — 创意产出辅助</div>
+                <div class="creative-layout">
+                    <div class="creative-text">
+                        <h2 class="section-title">平面创意<br>的生产力引擎</h2>
+                        <p class="section-desc">
+                            面对大促节点爆发性的创意需求，AI设计Agent让团队以更快的速度、<br>
+                            更高的质量，产出数倍于传统模式的视觉物料。
+                        </p>
+                    </div>
+
+                    <div class="creative-showcase">
+                        <div class="showcase-grid">
+                            <div class="showcase-card">
+                                <div class="showcase-number">01</div>
+                                <h4>批量化创意生成</h4>
+                                <p>基于品牌规范输入统一的视觉方向，AI批量输出数十张符合调性的Social海报，设计师只需精选和微调。</p>
+                            </div>
+                            <div class="showcase-card">
+                                <div class="showcase-number">02</div>
+                                <h4>多尺寸智能延展</h4>
+                                <p>一张主视觉自动适配微信、微博、小红书、抖音等不同平台的尺寸规范，告别机械式的手动裁切。</p>
+                            </div>
+                            <div class="showcase-card">
+                                <div class="showcase-number">03</div>
+                                <h4>风格一致性锁定</h4>
+                                <p>通过训练品牌专属风格模型，确保每一张产出都精准贴合客户VI系统，如同资深设计师的手笔。</p>
+                            </div>
+                            <div class="showcase-card">
+                                <div class="showcase-number">04</div>
+                                <h4>创意方向快速验证</h4>
+                                <p>不再等待漫长的提案制作周期。10分钟内即可生成多个创意方向的可视化Demo，加速客户决策。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="creative-comparison">
+                    <div class="comparison-item before">
+                        <div class="comparison-label">传统流程</div>
+                        <div class="comparison-timeline">
+                            <div class="timeline-bar slow-bar"></div>
+                            <span class="timeline-duration">2-3 周</span>
+                        </div>
+                        <p>美术指导 → 设计师执行 → 多轮修改 → 延展适配 → 交付</p>
+                    </div>
+                    <div class="comparison-item after">
+                        <div class="comparison-label gradient-text">AI 驱动流程</div>
+                        <div class="comparison-timeline">
+                            <div class="timeline-bar fast-bar"></div>
+                            <span class="timeline-duration">48 小时</span>
+                        </div>
+                        <p>创意Brief → AI批量生成 → 人工精选 → 一键延展 → 交付</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════ VIDEO PIPELINE ═══════════════ -->
+        <section class="section pipeline-section" id="pipeline">
+            <div class="container">
+                <div class="section-label">03 — 视频管线</div>
+                <div class="pipeline-content">
+                    <div class="text-block pinned-text">
+                        <h2 class="section-title">告别盲盒<br>视频制作的降维打击</h2>
+                        <p class="section-desc">
+                            从创意预演到成片交付，AI重新定义视频生产管线的速度与精度。
+                        </p>
+                        <ul class="feature-ticks">
+                            <li><i class="ph-fill ph-check-circle"></i> Tapnow 快速制作Demo影片与视觉预演</li>
+                            <li><i class="ph-fill ph-check-circle"></i> Seedance 2.0 多模态视频秒级生成</li>
+                            <li><i class="ph-fill ph-check-circle"></i> AI初剪回流专业后期管线精修</li>
+                            <li><i class="ph-fill ph-check-circle"></i> 从Storyboard到成片，周期压缩80%</li>
+                        </ul>
+                    </div>
+
+                    <div class="visual-block pipeline-visualization">
+                        <div class="node-graph">
+                            <div class="node step-1">
+                                <div class="node-icon"><i class="ph ph-pencil-line"></i></div>
+                                <div class="node-info">
+                                    <strong>创意预演</strong>
+                                    <span>Tapnow</span>
+                                </div>
+                            </div>
+                            <div class="connector">
+                                <div class="connector-dot"></div>
+                            </div>
+                            <div class="node step-2">
+                                <div class="node-icon"><i class="ph ph-magic-wand"></i></div>
+                                <div class="node-info">
+                                    <strong>视频生成</strong>
+                                    <span>Seedance 2.0</span>
+                                </div>
+                            </div>
+                            <div class="connector">
+                                <div class="connector-dot"></div>
+                            </div>
+                            <div class="node step-3">
+                                <div class="node-icon"><i class="ph ph-scissors"></i></div>
+                                <div class="node-info">
+                                    <strong>专业后期</strong>
+                                    <span>专业剪辑</span>
+                                </div>
+                            </div>
+                            <div class="connector">
+                                <div class="connector-dot"></div>
+                            </div>
+                            <div class="node step-4">
+                                <div class="node-icon"><i class="ph ph-rocket-launch"></i></div>
+                                <div class="node-info">
+                                    <strong>终版交付</strong>
+                                    <span>客户出街</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════ VIBE CODING / CROSS-DEPT ═══════════════ -->
+        <section class="section vibe-section" id="vibe">
+            <div class="container">
+                <div class="section-label">04 — 全域提效</div>
+                <div class="section-header">
+                    <h2 class="section-title">Vibe Coding<br>跨部门智能赋能</h2>
+                    <p class="section-desc">AI不停留在创意部门。通过 Vibe Coding 为公司每一个部门编写定制化提效工具，<br>消灭日常工作流中的一切重复性摩擦。</p>
+                </div>
+
+                <div class="vibe-grid">
+                    <div class="vibe-card">
+                        <div class="vibe-icon"><i class="ph ph-chart-line-up"></i></div>
+                        <h4>媒介部</h4>
+                        <p class="vibe-desc">自动化爬虫实时追踪竞品投放数据，ROI仪表盘一键生成。告别人工盯盘与繁杂表单。</p>
+                        <div class="vibe-tag">数据监控Agent</div>
+                    </div>
+                    <div class="vibe-card">
+                        <div class="vibe-icon"><i class="ph ph-lightbulb"></i></div>
+                        <h4>策略部</h4>
+                        <p class="vibe-desc">海量调研报告瞬间转化为结构化的创意简报。A/B测试方案与受众洞察一键输出。</p>
+                        <div class="vibe-tag">洞察生成引擎</div>
+                    </div>
+                    <div class="vibe-card">
+                        <div class="vibe-icon"><i class="ph ph-users-three"></i></div>
+                        <h4>客户部</h4>
+                        <p class="vibe-desc">结案报告自动化生成，视觉物料批量预览工具，客户沟通效率提升一个量级。</p>
+                        <div class="vibe-tag">报告自动化</div>
+                    </div>
+                    <div class="vibe-card">
+                        <div class="vibe-icon"><i class="ph ph-code"></i></div>
+                        <h4>全公司</h4>
+                        <p class="vibe-desc">任何部门的日常痛点，都可以通过 Vibe Coding 快速编写定制化内部工具解决。零摩擦。</p>
+                        <div class="vibe-tag">内部工具工厂</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════ COMPLIANCE ═══════════════ -->
+        <section class="section compliance-section" id="compliance">
+            <div class="container">
+                <div class="section-label">05 — 合规与沉淀</div>
+                <div class="compliance-grid">
+                    <div class="compliance-text">
+                        <h2 class="section-title">数字护城河<br>版权隔离与资产沉淀</h2>
+                        <p class="section-desc">创意资产是广告公司的命脉。<br>我们从底层建立最高级别的安全隔离区。</p>
+                    </div>
+
+                    <div class="cards-wrapper">
+                        <div class="safeguard-card">
+                            <div class="card-header">
+                                <div class="card-icon"><i class="ph ph-shield-check"></i></div>
+                                <h3>180 专属私有模型库</h3>
+                            </div>
+                            <p>利用头部客户授权历史资产训练专属 LoRA 模型，确保生成的图文视频 100% 贴合品牌规范(VI)，从物理层面规避外部侵权风险。</p>
+                        </div>
+                        <div class="safeguard-card">
+                            <div class="card-header">
+                                <div class="card-icon"><i class="ph ph-database"></i></div>
+                                <h3>提示词引擎中台</h3>
+                            </div>
+                            <p>将零散在个人手中的经验，升级为公司永久的数字资产库。每一个成功的创意配方，都将沉淀为团队的集体智慧与可复用资产。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════ ARCHITECTURE ═══════════════ -->
+        <section class="section architecture-section" id="architecture">
+            <div class="container">
+                <div class="section-label">06 — 中枢架构</div>
+                <div class="section-header center">
+                    <h2 class="section-title">全域神经中枢</h2>
+                    <p class="section-desc">AI部门绝非孤岛，而是贯穿全公司的核心引擎——<br>一个没有摩擦力的飞轮闭环。</p>
+                </div>
+
+                <div class="architecture-diagram">
+                    <svg class="connection-svg" viewBox="0 0 1000 600" preserveAspectRatio="xMidYMid meet">
+                        <defs>
+                            <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:rgba(255,255,255,0.05)" />
+                                <stop offset="50%" style="stop-color:rgba(255,255,255,0.2)" />
+                                <stop offset="100%" style="stop-color:rgba(255,255,255,0.05)" />
+                            </linearGradient>
+                        </defs>
+                        <line x1="500" y1="300" x2="200" y2="120" stroke="url(#lineGrad)" stroke-width="1"
+                            class="svg-line" />
+                        <line x1="500" y1="300" x2="800" y2="120" stroke="url(#lineGrad)" stroke-width="1"
+                            class="svg-line" />
+                        <line x1="500" y1="300" x2="200" y2="480" stroke="url(#lineGrad)" stroke-width="1"
+                            class="svg-line" />
+                        <line x1="500" y1="300" x2="800" y2="480" stroke="url(#lineGrad)" stroke-width="1"
+                            class="svg-line" />
+                    </svg>
+
+                    <div class="center-hub">
+                        <div class="hub-pulse"></div>
+                        <div class="hub-core">180 AI Studio</div>
+                    </div>
+
+                    <div class="satellite strategy">
+                        <div class="sat-icon"><i class="ph ph-lightbulb"></i></div>
+                        <h4>策略部</h4>
+                        <p>海量报告秒转结构化简报</p>
+                    </div>
+
+                    <div class="satellite media">
+                        <div class="sat-icon"><i class="ph ph-chart-bar"></i></div>
+                        <h4>媒介部</h4>
+                        <p>投放数据实时监控与洞察</p>
+                    </div>
+
+                    <div class="satellite creative-dept">
+                        <div class="sat-icon"><i class="ph ph-paint-brush"></i></div>
+                        <h4>创意部</h4>
+                        <p>AI辅助设计与视频生产</p>
+                    </div>
+
+                    <div class="satellite client">
+                        <div class="sat-icon"><i class="ph ph-handshake"></i></div>
+                        <h4>客户部</h4>
+                        <p>结案报告与物料自动化</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════ FOOTER ═══════════════ -->
+        <footer class="footer">
+            <div class="container center">
+                <p class="footer-label">THE FUTURE OF 180</p>
+                <h2 class="cta-text">用极致效率<br>预见下一个十年</h2>
+                <div class="signature">
+                    <span class="sig-line"></span>
+                    <span class="sig-name">180 AI 创意生产中心 · 提案</span>
+                    <span class="sig-line"></span>
+                </div>
+                <p class="footer-note">© 2026 180 Advertising · AI Studio Proposal</p>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Lenis for smooth scrolling -->
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+
+    <!-- GSAP Core & ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
